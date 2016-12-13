@@ -7,6 +7,11 @@ nav a{
     
 }
 
+.no-side-padding {
+    padding-left:0;
+    padding-right:0;
+}
+
 
 .custom-nav {
     background-color: rgba(33,33,33, 0.6);
@@ -15,13 +20,46 @@ nav a{
 
 .bg-image {
     background-image: url("bgOP.png");
+    display: block;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
 
+/*Intro*/
 
+.view {
+    background: url("http://mdbootstrap.com/images/regular/people/img%20(58).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view {
+        height: auto;
+        position: relative;
+    }
+}
+
+.description {
+    padding-top: 25%;
+    padding-bottom: 3rem;
+    color: #fff
+}
+
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+    #app-mockup {
+        max-height: 400px;
+    }
+}
 
 
 
